@@ -8,11 +8,13 @@ business.
 """
 
 # @TODO: From the pathlib library, import the main class Path
-
+import os
+from pathlib import Path
 
 # @TODO: Check the current directory where the Python program is executing from
-
-
+print(os.getcwd())
+path = '..//Activities//08-Stu_File_IO//Resources//customer_traffic.txt'
+file = open(path, 'r')
 # @TODO: Set the path using Pathlib
 
 

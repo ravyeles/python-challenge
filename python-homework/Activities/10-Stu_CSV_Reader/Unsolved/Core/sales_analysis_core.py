@@ -7,17 +7,20 @@ row of the file to calculate customer sales averages.
 """
 
 # @TODO: Import the pathlib and csv library
-
+import os
+from pathlib import Path
+import csv
 
 
 # @TODO: Set the file path
-
+path = 'sales.csv'
 
 # Initialize list of records
 records = []
 
 # @TODO: Open the csv file as an object
-
+sales = open(path, 'r')
+print(sales)
 
     # @TODO:
     # Pass in the csv file to the csv.reader() function

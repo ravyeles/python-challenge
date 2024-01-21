@@ -6,7 +6,7 @@ undertake based on max NPV values.
 """
 
 # @TODO: Import the NumPy Financial (numpy_financial) library
-
+import numpy_financial as npf
 
 # Discount Rate
 discount_rate = .1
@@ -20,23 +20,22 @@ cash_flows_aggressive = [-2250, 800, 800, 800, 800]
 npv_dict = {}
 
 # @TODO: Calculate the NPV for each scenario
-
-
+npv_dict["Conservative"] = npf.npv(discount_rate, cash_flows_conservative)
+npv_dict["Neutral"] = npf.npv(discount_rate, cash_flows_neutral)
+npv_dict["Aggressive"] = npf.npv(discount_rate, cash_flows_aggressive)
 
 
 # @TODO: Initialize variables
-
-
+max_key = ""
+max_value = 0
 
 # @TODO: Iterate over npv_dict to find the max key-value pair
-
-
-
-
-
-
-
+for key, value in npv_dict.items():
+    if value > max_value:
+        max_key = key
+        max_value = value
 
 
 
 # @TODO: Print out the optimal project scenario with the highest NPV value
+print(f"The project with the highest NPV value is the {max_key} project, with expected returns of ${max_value}.")
