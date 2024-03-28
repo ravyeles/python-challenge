@@ -34,11 +34,11 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 * Machine Learning Model 2:
   * Description of Model 2 Accuracy, Precision, and Recall scores.
    - After Resampling
-    - ```Accuracy = 99.368%```
-    - ```Precision for prediction 0 (i.e. succesfull loan paid off) = 100%```
-    - ```Precision for prediction 1 (i.e. default) = 84%```
-    - ```Recall for prediction 0 (i.e. succesfull loan paid off) = 99%```
-    - ```Recall for prediction 1 (i.e. default) = 99%```
+     - ```Accuracy = 99.368%```
+     - ```Precision for prediction 0 (i.e. succesfull loan paid off) = 100%```
+     - ```Precision for prediction 1 (i.e. default) = 84%```
+     - ```Recall for prediction 0 (i.e. succesfull loan paid off) = 99%```
+     - ```Recall for prediction 1 (i.e. default) = 99%```
 
 ## Summary
 
